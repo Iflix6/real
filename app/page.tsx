@@ -34,7 +34,7 @@ export default function Home() {
                   <path d="M20 4L16 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-              <div className="hidden md:flex space-x-8">
+              <div className="hidden md:flex space-x-8 ml-auto">
                 <Link href="#" className="text-white font-medium">
                   Home
                 </Link>
@@ -60,41 +60,44 @@ export default function Home() {
           {/* Main Content */}
           <div className="mt-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
             {/* Left Card */}
-            <div className="bg-gradient-to-br from-[] via-blue-600 to-indigo-700 rounded-3xl relative p-6 overflow-hidden">
+            <div className="bg-gradient-to-br from-[#3B82F6]  rounded-3xl relative p-6 overflow-hidden">
               <div className="flex space-x-2 mb-4">
-                <span className="bg-white text-black text-sm font-medium px-3 py-1 rounded-full">Property</span>
-                <span className="bg-white text-black text-sm font-medium px-3 py-1 rounded-full">Web3.0</span>
+              <div className="absolute -top-10 -left-10 w-40 h-40 bg-gradient-to-br from-pink-400 via-blue-500 to-pink-500 rounded-full opacity-40 blur-2xl z-0"></div>
+                <span className="bg-white text-[#3B82F6] text-sm font-medium px-3 py-1 rounded-full">Property</span>
+                <span className="bg-white text-[#EC4899] text-sm font-medium px-3 py-1 rounded-full">Web3.0</span>
               </div>
 
-              <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+              <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-[300px]">
                 Buy land, they&apos;re not making it anymore. <span className="text-3xl">🏡</span>
               </h1>
 
-              <div className="border-t border-white/20 my-6"></div>
-
-              <p className="text-white/90 text-lg mb-16">
-                Land monopoly is not only monopoly, but it is by far the greatest of monopolies; it is a perpetual
-                monopoly.
-              </p>
-
               {/* Circular rotating badge */}
-              <div className="absolute -right-4 bottom-16 w-32 h-32">
+              <div className="absolute mb-[-100px] items-center -right-4 bottom-16 w-32 h-32 mr-6">
                 <div className="relative w-full h-full">
-                  <div className="absolute inset-0 rounded-full border-2 border-white animate-spin-slow"></div>
+                  <div className="absolute inset-0 rounded-full text-black text-black bg-white border-2 border-white animate-spin-slow"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <svg viewBox="0 0 100 100" className="w-full h-full">
                       <defs>
                         <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
                       </defs>
-                      <text fill="white" fontSize="6">
-                        <textPath xlinkHref="#circle" className="text-center" startOffset="0%">
-                          Your proprietary • Our archive • Your proprietary •
+                      <text fill="black" fontSize="12">
+                        <textPath xlinkHref="#circle" className="text-center text-black" startOffset="0%">
+                        • Your proprietary • Our archive • Your proprietary •
                         </textPath>
                       </text>
                     </svg>
                   </div>
                 </div>
               </div>
+
+
+              <div className="mt-6 border-t border-white/20 my-6"></div>
+
+              <p className="mt-6 ext-white/90 text-lg mb-16">
+                Land monopoly is not only monopoly, but it is by far the greatest of monopolies; it is a perpetual
+                monopoly.
+              </p>
+
 
               {/* Arrow icon in the bottom right */}
               <div className="absolute bottom-4 right-4">
