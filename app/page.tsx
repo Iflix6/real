@@ -72,7 +72,7 @@ export default function Home() {
               </h1>
 
               {/* Circular rotating badge */}
-              <div className="absolute mb-[-100px] items-center -right-4 bottom-16 w-32 h-32 mr-6">
+              <div className="absolute mb-[200px] items-center -right-4 bottom-16 w-32 h-32 mr-6">
                 <div className="relative w-full h-full">
                   <div className="absolute inset-0 rounded-full text-black text-black bg-white border-2 border-white animate-spin-slow"></div>
                   <div className="absolute inset-0 flex items-center justify-center">
