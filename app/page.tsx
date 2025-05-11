@@ -113,7 +113,7 @@ export default function Home() {
               <div className="relative h-80 mb-6">
                 <div className="relative flex items-center">
                   {/* Main image */}
-                  <div className="relative w-full h-80 w-[500px] rounded-3xl overflow-hidden z-30">
+                  <div className="relative h-80 w-[500px] rounded-3xl overflow-hidden z-30">
                     <Image
                       src="/beach.jpg"
                       alt="Property visualization"
