@@ -113,7 +113,7 @@ export default function Home() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                    />
+                    /> 
                   </svg>
                 </button>
               </div>
